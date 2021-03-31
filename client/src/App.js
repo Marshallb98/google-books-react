@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Search from "./pages/search";
+import Saved from "./pages/saved";
 function App() {
   return (
     <Router>
@@ -10,10 +11,10 @@ function App() {
             <Route exact path={["/", "/search"]}>
               <Search />
             </Route>
-            {/* <Route exact path="/saved">
+            <Route exact path="/saved">
             <Saved />
           </Route>
-          <Route>
+          {/* <Route>
             <NoMatch />
           </Route> */}
           </Switch>
