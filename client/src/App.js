@@ -1,16 +1,11 @@
-import React, { Component } from "react";
-import "./App.css";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from "./components/navbar";
 import Search from "./pages/search";
-import Container from "react-bootstrap/Container";
 function App() {
   return (
     <Router>
       <div>
-        <Nav />
-        <Container fluid>
           <Switch>
             <Route exact path={["/", "/search"]}>
               <Search />
@@ -22,7 +17,6 @@ function App() {
             <NoMatch />
           </Route> */}
           </Switch>
-        </Container>
       </div>
     </Router>
   );
