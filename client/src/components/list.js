@@ -22,7 +22,7 @@ function List(props) {
         {props.book.description}
         </Card.Text>
         <a href={props.book.link}><Button variant="primary">View</Button></a>
-        <Button onClick={props.saveBook(props.book)} variant="primary">Save</Button>
+        <Button onClick={event => props.saveBook(props.book)} variant="success">Save</Button>
   
       </Card.Body>
       </Row>
